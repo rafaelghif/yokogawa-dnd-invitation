@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "yokogawa-dnd-invitation",
+    "production": "yokogawa-dnd-invitation"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
