@@ -21,7 +21,7 @@ const OutfitCarousel: React.FC = () => {
 			className="!p-5">
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/yokogawa-logo.png"}
+					src={"/assets/images/elementary-school-uniform.jpg"}
 					alt=""
 					className="h-auto w-auto"
 					height={300}
@@ -30,7 +30,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/yokogawa-logo.png"}
+					src={"/assets/images/senior-high-school-uniform.jpeg"}
 					alt=""
 					className="h-auto w-auto"
 					height={300}
@@ -39,7 +39,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/yokogawa-logo.png"}
+					src={"/assets/images/vocation-high-school-uniform.jpg"}
 					alt=""
 					className="h-auto w-auto"
 					height={300}
@@ -48,7 +48,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/yokogawa-logo.png"}
+					src={"/assets/images/batik-uniform.jpg"}
 					alt=""
 					className="h-auto w-auto"
 					height={300}
