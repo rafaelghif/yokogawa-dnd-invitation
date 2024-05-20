@@ -8,11 +8,11 @@ import { delay } from "@/helpers/form";
 import { Circles } from "react-loading-icons";
 import QrCode from "@/components/QrCode";
 import LoadingCircle from "@/components/LoadingCircle";
-import FadeInDiv from "@/components/FadeInDiv";
+import { UserInterface } from "@/types/user";
 
 export default function FormInput() {
 	const [badgeId, setBadgeId] = useState<string>("");
-	const [submittedValue, setSubmittedValue] = useState<string>("");
+	const [user, setUser] = useState<UserInterface>();
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const { errorToast } = useToast();
@@ -20,15 +20,16 @@ export default function FormInput() {
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		setIsSubmitting(true);
-		setSubmittedValue("");
+		setUser(undefined);
+
 		await delay(1000);
+
 		try {
-			const user = await getUserByBadgeId(badgeId);
-			if (user) {
-				setSubmittedValue(user.uniqueId);
+			const userData = await getUserByBadgeId(badgeId);
+			if (userData) {
+				setUser(userData);
 			} else {
 				errorToast("BadgeId not found, please contact administrator!");
-				setSubmittedValue("");
 			}
 		} catch (err) {
 			console.log("error", err);
@@ -52,14 +53,14 @@ export default function FormInput() {
 	};
 
 	return (
-		<FadeInDiv className="flex flex-col w-11/12 gap-3 p-5 rounded shadow">
+		<div className="flex flex-col w-11/12 gap-3 p-5 rounded shadow-xl">
 			<div>
-				<p className="text-lg font-semibold text-center uppercase">
+				<h1 className="font-semibold text-center uppercase tracking-tight">
 					Received Form
-				</p>
+				</h1>
 			</div>
 			<div className="flex items-center justify-center">
-				{submittedValue && <QrCode value={submittedValue} />}
+				{user && <QrCode value={user.uniqueId} />}
 				{isSubmitting && <LoadingCircle />}
 			</div>
 			<form
@@ -75,6 +76,7 @@ export default function FormInput() {
 						className="form-input"
 						required={true}
 						placeholder="Badge Id"
+						onClick={() => setBadgeId("")}
 					/>
 				</div>
 				<div className="flex justify-center space-x-2">
@@ -91,7 +93,7 @@ export default function FormInput() {
 							</span>
 						)}
 					</button>
-					{submittedValue && (
+					{user && (
 						<button
 							type="button"
 							className="btn"
@@ -101,6 +103,6 @@ export default function FormInput() {
 					)}
 				</div>
 			</form>
-		</FadeInDiv>
+		</div>
 	);
 }

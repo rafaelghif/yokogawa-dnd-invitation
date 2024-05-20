@@ -1,15 +1,14 @@
 import { Circles } from "react-loading-icons";
-import FadeInDiv from "./FadeInDiv";
 
 const LoadingCircle: React.FC = () => {
 	return (
-		<FadeInDiv duration={0.3}>
+		<div data-aos="fadeInUp">
 			<Circles
 				stroke="#000000"
 				strokeOpacity={0.3}
 				className="h-44 w-44"
 			/>
-		</FadeInDiv>
+		</div>
 	);
 };
 

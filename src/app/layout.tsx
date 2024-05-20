@@ -15,7 +15,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className="h-screen">
 				{children}
-				<footer className="absolute bottom-0 text-center w-full">
+				<footer className="text-center w-full">
 					<span>Yokogawa Manufacturing Batam &copy; 2024</span>
 				</footer>
 			</body>

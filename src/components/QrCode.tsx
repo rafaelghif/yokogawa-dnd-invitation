@@ -1,7 +1,6 @@
 "use client";
 
 import { useQRCode } from "next-qrcode";
-import FadeInDiv from "./FadeInDiv";
 
 interface QrCodeProps {
 	value: string;
@@ -10,7 +9,7 @@ interface QrCodeProps {
 const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 	const { Canvas } = useQRCode();
 	return (
-		<FadeInDiv>
+		<div data-aos="fadeInUp">
 			<Canvas
 				key="canvas"
 				text={value}
@@ -25,7 +24,7 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 					quality: 1,
 				}}
 			/>
-		</FadeInDiv>
+		</div>
 	);
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { twMerge } from "tailwind-merge";
 
 interface FadeInSectionProps {
 	children: React.ReactNode;
@@ -15,7 +16,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({
 }) => {
 	return (
 		<motion.section
-			className={className}
+			className={twMerge("w-full", className)}
 			animate={{ opacity: 1, scale: 1 }}
 			initial={{ opacity: 0 }}
 			exit={{ opacity: 0 }}
