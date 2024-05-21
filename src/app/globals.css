@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 @layer components {
 	.btn {
 		@apply py-2 px-4 rounded;
 	}
 
 	.btn-primary {
-		@apply bg-[#FFC107] text-white hover:bg-[#FFA000];
+		@apply bg-[#00797c] hover:bg-[#009fa2] text-white;
 	}
 
 	.form-input {
-		@apply p-3 w-full ring-1 ring-[#FFC107] focus:outline-none focus:ring-2 rounded;
+		@apply p-3 w-full rounded ring-1 outline-none ring-[#00797c] focus:ring-2 focus:ring-[#009fa2];
 	}
 }

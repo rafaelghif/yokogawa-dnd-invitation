@@ -23,36 +23,40 @@ const OutfitCarousel: React.FC = () => {
 				<Image
 					src={"/assets/images/elementary-school-uniform.jpg"}
 					alt=""
-					className="h-auto w-auto"
+					className="h-auto w-auto aspect-square"
 					height={300}
 					width={300}
+					loading="lazy"
 				/>
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
 					src={"/assets/images/senior-high-school-uniform.jpeg"}
 					alt=""
-					className="h-auto w-auto"
+					className="h-auto w-auto aspect-square"
 					height={300}
 					width={300}
+					loading="lazy"
 				/>
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
 					src={"/assets/images/vocation-high-school-uniform.jpg"}
 					alt=""
-					className="h-auto w-auto"
+					className="h-auto w-auto aspect-square"
 					height={300}
 					width={300}
+					loading="lazy"
 				/>
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
 					src={"/assets/images/batik-uniform.jpg"}
 					alt=""
-					className="h-auto w-auto"
+					className="h-auto w-auto aspect-square"
 					height={300}
 					width={300}
+					loading="lazy"
 				/>
 			</SwiperSlide>
 		</Swiper>

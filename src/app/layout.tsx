@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Source_Sans_3 } from "next/font/google";
+const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Yokogawa DND Invitation",
@@ -13,7 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="h-screen">
+			<body className={sourceSans3.className}>
 				{children}
 				<footer className="text-center w-full">
 					<span>Yokogawa Manufacturing Batam &copy; 2024</span>

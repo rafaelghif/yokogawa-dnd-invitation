@@ -53,19 +53,15 @@ export default function FormInput() {
 	};
 
 	return (
-		<div className="flex flex-col w-11/12 gap-3 p-5 rounded shadow-xl">
-			<div>
-				<h1 className="font-semibold text-center uppercase tracking-tight">
-					Received Form
-				</h1>
-			</div>
-			<div className="flex items-center justify-center">
-				{user && <QrCode value={user.uniqueId} />}
+		<div className="flex flex-col items-center w-11/12 gap-3">
+			<div className="flex items-center justify-center mb-2">
+				{user && <QrCode value={user} />}
 				{isSubmitting && <LoadingCircle />}
 			</div>
 			<form
 				onSubmit={handleSubmit}
-				className="flex flex-col w-full gap-3">
+				className="flex flex-col w-1/2 gap-3"
+				autoComplete="false">
 				<div className="w-full">
 					<input
 						type="text"
@@ -96,7 +92,7 @@ export default function FormInput() {
 					{user && (
 						<button
 							type="button"
-							className="btn"
+							className="text-white bg-green-500 btn hover:bg-green-600"
 							onClick={handleDownload}>
 							Download
 						</button>
