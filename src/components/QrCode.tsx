@@ -32,7 +32,7 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 					text={uniqueId}
 					logo={{
 						src: "/assets/images/yokogawa-logo.png",
-						options: { width: 35, x: 120, y: 120 },
+						options: { width: 35, x: 115, y: 115 },
 					}}
 					options={{
 						errorCorrectionLevel: "H",
