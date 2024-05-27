@@ -22,11 +22,11 @@ const UserInformation: React.FC<UserInformationProps> = ({
 				</div>
 			</div>
 			<div className="mb-2 text-gray-600 sm:text-lg lg:text-xl">
-				<div className="font-medium">Department:</div>
+				<div className="font-semibold">Department:</div>
 				<div>{department}</div>
 			</div>
 			<div className="text-sm text-gray-500 sm:text-md lg:text-lg">
-				<div className="font-medium">Bus Number:</div>
+				<div className="font-semibold">Bus Number:</div>
 				<div>{busNumber}</div>
 			</div>
 		</div>

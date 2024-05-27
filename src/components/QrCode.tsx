@@ -3,13 +3,14 @@
 import { UserInterface } from "@/types/user";
 import { useQRCode } from "next-qrcode";
 import UserInformation from "./UserInformation";
+import EventDetail from "./EventDetail";
 
 interface QrCodeProps {
 	value: UserInterface;
 }
 
 const QrCode: React.FC<QrCodeProps> = ({ value }) => {
-	const { uniqueId, badgeId, name, department, busNumber } = value;
+	const { uniqueId, badgeId, name, department, seat, busNumber } = value;
 	const { Canvas } = useQRCode();
 	return (
 		<div
@@ -47,6 +48,7 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 				department={department}
 				busNumber={busNumber}
 			/>
+			<EventDetail seat={seat} />
 		</div>
 	);
 };

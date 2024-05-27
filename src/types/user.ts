@@ -3,6 +3,6 @@ export interface UserInterface {
 	badgeId: string;
 	name: string;
 	department: string;
-	sheet: string;
+	seat: string;
 	busNumber: string;
 }
