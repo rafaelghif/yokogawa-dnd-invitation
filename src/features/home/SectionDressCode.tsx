@@ -4,15 +4,15 @@ import OutfitCarousel from "./OutfitCarousel";
 const SectionDressCode: React.FC = () => {
 	return (
 		<FadeInSection>
-			<article className="p-5 flex flex-col lg:flex-row-reverse">
+			<article className="flex flex-col p-5 lg:flex-row-reverse">
 				<div>
 					<h1
-						className="font-semibold tracking-tight uppercase text-xl text-center"
+						className="text-xl font-semibold tracking-tight text-center uppercase"
 						data-aos="fadeInUp">
 						DRESS CODE
 					</h1>
 					<p
-						className="text-slate-600 tracking-wide indent-4 text-justify p-5"
+						className="p-5 tracking-wide text-justify text-slate-600 indent-4"
 						data-aos="fadeInUp">
 						Lorem Ipsum is simply dummy text of the printing and
 						typesetting industry. Lorem Ipsum has been the

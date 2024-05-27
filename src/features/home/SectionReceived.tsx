@@ -1,3 +1,4 @@
+import CountdownTimer from "@/components/CountdownTimer";
 import FormInput from "./FormInput";
 
 const SectionReceived: React.FC = () => {
@@ -5,11 +6,16 @@ const SectionReceived: React.FC = () => {
 		<div
 			data-aos="fadeInUp"
 			id="invitation"
-			className="flex flex-col items-center justify-center w-full gap-5 p-10 bg-gray-100">
-			<h1 className="text-xl font-semibold tracking-tight text-center uppercase">
+			className="flex flex-col items-center justify-center w-full gap-5 p-6 bg-gray-100 sm:p-10 lg:p-16">
+			<h1 className="text-lg font-semibold tracking-tight text-center text-gray-800 uppercase sm:text-xl lg:text-2xl">
 				Received Form
 			</h1>
-			<FormInput />
+			<div className="w-full lg:w-[47%]" data-aos="fadeInUp">
+				<CountdownTimer targetDateTime="2024-07-05 05:00:00" />
+			</div>
+			<div className="w-full" data-aos="fadeInUp">
+				<FormInput />
+			</div>
 		</div>
 	);
 };

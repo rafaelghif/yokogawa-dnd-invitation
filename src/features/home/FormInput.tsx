@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { saveAs } from "file-saver";
-import { getUserByBadgeId } from "@/sevices/user";
+import { getUserByBadgeId } from "@/services/user";
 import useToast from "@/hooks/useToast";
 import { delay } from "@/helpers/form";
 import { Circles } from "react-loading-icons";
@@ -53,14 +53,14 @@ export default function FormInput() {
 	};
 
 	return (
-		<div className="flex flex-col items-center w-11/12 gap-3">
-			<div className="flex items-center justify-center mb-2">
+		<div className="flex flex-col items-center w-full gap-3">
+			<div className="flex items-center justify-center w-full mb-2">
 				{user && <QrCode value={user} />}
 				{isSubmitting && <LoadingCircle />}
 			</div>
 			<form
 				onSubmit={handleSubmit}
-				className="flex flex-col w-1/2 gap-3"
+				className="flex flex-col w-11/12 gap-3 lg:w-[47%]"
 				autoComplete="false">
 				<div className="w-full">
 					<input
@@ -91,6 +91,7 @@ export default function FormInput() {
 					</button>
 					{user && (
 						<button
+							id="downloadBtn"
 							type="button"
 							className="text-white bg-green-500 btn hover:bg-green-600"
 							onClick={handleDownload}>
