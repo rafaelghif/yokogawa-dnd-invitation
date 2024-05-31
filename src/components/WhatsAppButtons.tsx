@@ -32,7 +32,8 @@ const WhatsAppButtons: React.FC = () => {
 				<button
 					key={index}
 					className="flex flex-row items-center w-full gap-2 px-4 py-2 text-white transition-colors bg-green-500 rounded hover:bg-green-700"
-					onClick={() => openWhatsAppChat(contact.number)}>
+					onClick={() => openWhatsAppChat(contact.number)}
+					data-aos="fadeInUp">
 					<svg
 						fill="#FFFFFF"
 						version="1.1"
