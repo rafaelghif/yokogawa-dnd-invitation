@@ -15,6 +15,10 @@ const WhatsAppButtons: React.FC = () => {
 			name: "Dita Marwati",
 			number: "6287872460373",
 		},
+		{
+			name: "Briyan Sumartono",
+			number: "6281991080994",
+		},
 	];
 
 	const openWhatsAppChat = (number: string) => {
