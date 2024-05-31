@@ -27,7 +27,7 @@ const WhatsAppButtons: React.FC = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center w-[90%] space-y-2">
+		<div className="flex flex-col items-center justify-center w-[90%] lg:w-[30%] space-y-2">
 			{contacts.map((contact, index) => (
 				<button
 					key={index}

@@ -4,7 +4,7 @@ import OutfitCarousel from "./OutfitCarousel";
 const SectionDressCode: React.FC = () => {
 	return (
 		<FadeInSection>
-			<article className="flex flex-col p-5 bg-gray-100 lg:flex-row-reverse">
+			<article className="flex flex-col gap-3 p-5 bg-gray-100 lg:gap-5 lg:flex-row">
 				<div>
 					<h1
 						className="text-xl font-semibold tracking-tight text-center uppercase"

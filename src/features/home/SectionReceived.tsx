@@ -6,7 +6,7 @@ const SectionReceived: React.FC = () => {
 		<div
 			data-aos="fadeInUp"
 			id="invitation"
-			className="flex flex-col items-center justify-center w-full gap-5 p-6 bg-gray-100 sm:p-10 lg:p-16">
+			className="flex flex-col items-center justify-center w-full gap-5 p-6 sm:p-10 lg:p-16">
 			<h1 className="text-lg font-semibold tracking-tight text-center text-gray-800 uppercase sm:text-xl lg:text-2xl">
 				Received Form
 			</h1>
