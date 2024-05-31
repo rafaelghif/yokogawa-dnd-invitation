@@ -13,7 +13,9 @@ const SectionOpenTalent: React.FC = () => {
 						OPEN TALENT
 					</h1>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-3 p-5 tracking-wide text-slate-600 indent-4">
+				<div
+					className="flex flex-col items-center justify-center gap-3 p-5 tracking-wide text-slate-600 indent-4"
+					data-aos="fadeInUp">
 					<Image
 						src={"/assets/images/event.jpg"}
 						alt="Poster"
