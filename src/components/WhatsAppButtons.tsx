@@ -37,11 +37,11 @@ const WhatsAppButtons: React.FC = () => {
 						viewBox="0 0 308 308"
 						stroke="#FFFFFF"
 						className="h-auto w-7">
-						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 						<g
 							id="SVGRepo_tracerCarrier"
-							stroke-linecap="round"
-							stroke-linejoin="round"></g>
+							strokeLinecap="round"
+							strokeLinejoin="round"></g>
 						<g id="SVGRepo_iconCarrier">
 							{" "}
 							<g id="XMLID_468_">
