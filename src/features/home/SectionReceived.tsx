@@ -11,7 +11,7 @@ const SectionReceived: React.FC = () => {
 				Received Form
 			</h1>
 			<div className="w-full lg:w-[47%]" data-aos="fadeInUp">
-				<CountdownTimer targetDateTime="2024-07-05 05:00:00" />
+				<CountdownTimer targetDateTime="2024-07-05 15:45:00" />
 			</div>
 			<div className="w-full" data-aos="fadeInUp">
 				<FormInput />

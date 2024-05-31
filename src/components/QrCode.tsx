@@ -16,14 +16,17 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 		<div
 			data-aos="fadeInUp"
 			className="flex flex-col items-center justify-center gap-3 w-full p-6 transition-transform transform bg-white border border-gray-200 rounded-lg shadow-lg sm:w-11/12 lg:w-[47%] hover:scale-105">
-			<div className="w-full p-4 text-center bg-yellow-100 border border-yellow-500 rounded-lg shadow-md">
+			<div className="w-full p-4 text-justify bg-yellow-100 border border-yellow-500 rounded-lg shadow-md">
 				<p className="text-sm font-bold text-red-600 sm:text-md lg:text-lg">
-					QR Generated. Please click the{" "}
+					Ini adalah undangan yang akan berguna untuk tanda
+					kehadiran/absensi, tebus souvenir pada saat kedatangan,
+					nomor undian doorprize. Sehingga pada kolom dibawah ini
+					untuk memasukkan nomor badge/karyawan untuk membuat barcode.
+					Barcode tersebut mohon di{" "}
 					<a href="#downloadBtn" className="text-red-800 underline">
 						Download
 					</a>{" "}
-					button below to save it, and show the saved QR code to the
-					committee when you arrive at the event.
+					atau disimpan dan gunakan pada saat registrasi di Hotel.
 				</p>
 			</div>
 			<div className="flex justify-center w-full">
@@ -46,9 +49,10 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 				badgeId={badgeId}
 				name={name}
 				department={department}
+				seat={seat}
 				busNumber={busNumber}
 			/>
-			<EventDetail seat={seat} />
+			<EventDetail />
 		</div>
 	);
 };

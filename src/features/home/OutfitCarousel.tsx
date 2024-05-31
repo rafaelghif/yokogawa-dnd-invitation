@@ -31,7 +31,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/senior-high-school-uniform.jpeg"}
+					src={"/assets/images/vocation-high-school-uniform.jpg"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
@@ -41,7 +41,17 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/vocation-high-school-uniform.jpg"}
+					src={"/assets/images/senior-high-school-uniform.jpg"}
+					alt=""
+					className="w-auto h-auto aspect-square"
+					height={300}
+					width={300}
+					loading="lazy"
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="!flex justify-center items-center">
+				<Image
+					src={"/assets/images/teacher-uniform.jpg"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}

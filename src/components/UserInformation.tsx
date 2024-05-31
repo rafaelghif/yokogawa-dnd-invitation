@@ -2,6 +2,7 @@ interface UserInformationProps {
 	badgeId: string;
 	name: string;
 	department: string;
+	seat: string;
 	busNumber: string;
 }
 
@@ -9,6 +10,7 @@ const UserInformation: React.FC<UserInformationProps> = ({
 	badgeId,
 	name,
 	department,
+	seat,
 	busNumber,
 }) => {
 	return (
@@ -24,6 +26,10 @@ const UserInformation: React.FC<UserInformationProps> = ({
 			<div className="mb-2 text-gray-600 sm:text-lg lg:text-xl">
 				<div className="font-semibold">Department:</div>
 				<div>{department}</div>
+			</div>
+			<div className="mb-2 text-gray-600 sm:text-lg lg:text-xl">
+				<div className="font-semibold">Seat:</div>
+				<div>{seat}</div>
 			</div>
 			<div className="text-sm text-gray-500 sm:text-md lg:text-lg">
 				<div className="font-semibold">Bus Number:</div>

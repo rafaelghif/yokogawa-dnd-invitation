@@ -58,6 +58,10 @@ export default function FormInput() {
 				onSubmit={handleSubmit}
 				className="flex flex-col w-11/12 gap-3 lg:w-[47%]"
 				autoComplete="false">
+				<div className="flex items-center justify-center w-full mb-2">
+					{user && <QrCode value={user} />}
+					{isSubmitting && <LoadingCircle />}
+				</div>
 				<div className="w-full">
 					<input
 						type="text"
@@ -96,10 +100,6 @@ export default function FormInput() {
 					)}
 				</div>
 			</form>
-			<div className="flex items-center justify-center w-full mb-2">
-				{user && <QrCode value={user} />}
-				{isSubmitting && <LoadingCircle />}
-			</div>
 		</div>
 	);
 }
