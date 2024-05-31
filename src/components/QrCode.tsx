@@ -16,7 +16,7 @@ const QrCode: React.FC<QrCodeProps> = ({ value }) => {
 		<div
 			data-aos="fadeInUp"
 			className="flex flex-col items-center justify-center gap-3 w-full p-6 transition-transform transform bg-white border border-gray-200 rounded-lg shadow-lg sm:w-11/12 lg:w-[47%] hover:scale-105">
-			<div className="w-full p-4 text-justify bg-yellow-100 border border-yellow-500 rounded-lg shadow-md">
+			<div className="w-full p-4 text-left bg-yellow-100 border border-yellow-500 rounded-lg shadow-md">
 				<p className="text-sm font-bold text-red-600 sm:text-md lg:text-lg">
 					Ini adalah undangan yang akan berguna untuk tanda
 					kehadiran/absensi, tebus souvenir pada saat kedatangan,
