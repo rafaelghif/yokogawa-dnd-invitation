@@ -56,20 +56,20 @@ export default function FormInput() {
 		<div className="flex flex-col items-center w-full gap-3">
 			<form
 				onSubmit={handleSubmit}
-				className="flex flex-col w-11/12 gap-3 lg:w-[47%]"
+				className="flex flex-col w-11/12 gap-3"
 				autoComplete="false">
 				<div className="flex items-center justify-center w-full mb-2">
 					{user && <QrCode value={user} />}
 					{isSubmitting && <LoadingCircle />}
 				</div>
-				<div className="w-full">
+				<div className="flex justify-center w-full">
 					<input
 						type="text"
 						name="badgeId"
 						id="badgeId"
 						value={badgeId}
 						onInput={(e) => setBadgeId(e.currentTarget.value)}
-						className="form-input"
+						className="form-input lg:w-[48%]"
 						required={true}
 						placeholder="Badge Id"
 						onClick={() => setBadgeId("")}

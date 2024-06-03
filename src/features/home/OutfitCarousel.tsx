@@ -21,7 +21,7 @@ const OutfitCarousel: React.FC = () => {
 			className="!p-5">
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/elementary-school-uniform.jpg"}
+					src={"/assets/images/elementary-school-uniform.png"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
@@ -31,7 +31,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/vocation-high-school-uniform.jpg"}
+					src={"/assets/images/vocation-high-school-uniform.png"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
@@ -41,7 +41,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/senior-high-school-uniform.jpg"}
+					src={"/assets/images/senior-high-school-uniform.png"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
@@ -51,7 +51,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/teacher-uniform.jpg"}
+					src={"/assets/images/teacher-uniform.png"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
@@ -61,7 +61,7 @@ const OutfitCarousel: React.FC = () => {
 			</SwiperSlide>
 			<SwiperSlide className="!flex justify-center items-center">
 				<Image
-					src={"/assets/images/batik-uniform.jpg"}
+					src={"/assets/images/batik-uniform.png"}
 					alt=""
 					className="w-auto h-auto aspect-square"
 					height={300}
