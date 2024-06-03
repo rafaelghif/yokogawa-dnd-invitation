@@ -25,7 +25,7 @@ const defaultIcon = L.icon({
 L.Marker.prototype.options.icon = defaultIcon;
 
 const LocationMap: React.FC = () => {
-	const handleMarkerClick = () => {
+	const handleMarkerClick = (): void => {
 		window.open("https://maps.app.goo.gl/m4mMK6zFLT979j928", "_blank");
 	};
 	return (
