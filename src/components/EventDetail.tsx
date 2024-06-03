@@ -1,4 +1,10 @@
-import LocationMap from "./LocationMap";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const LocationMap = dynamic(() => import("./LocationMap"), {
+	ssr: false,
+});
 
 const EventDetail: React.FC = () => {
 	return (
@@ -18,7 +24,6 @@ const EventDetail: React.FC = () => {
 						Radisson Golf & Convention Center Batam, Jl Jendral
 					</span>
 					<span>Sudirman, Sukajadi 29432 Batam Center</span>
-					
 				</div>
 			</div>
 		</div>
