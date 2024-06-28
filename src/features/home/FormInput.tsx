@@ -71,7 +71,7 @@ export default function FormInput() {
 						onInput={(e) => setBadgeId(e.currentTarget.value)}
 						className="form-input lg:w-[48%]"
 						required={true}
-						placeholder="Badge Id"
+						placeholder="Badge Id, example: 03191"
 						onClick={() => setBadgeId("")}
 					/>
 				</div>
