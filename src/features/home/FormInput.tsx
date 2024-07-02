@@ -62,7 +62,11 @@ export default function FormInput() {
 					{user && <QrCode value={user} />}
 					{isSubmitting && <LoadingCircle />}
 				</div>
-				<div className="flex justify-center w-full">
+				<div className="flex flex-col justify-center w-full gap-2 text-center">
+					<label htmlFor="" className="text-sm">
+						Pastikan kembali nomor badge yang anda masukkan benar.
+						Kesalahan input bukan tanggung jawab Panitia
+					</label>
 					<input
 						type="text"
 						name="badgeId"
@@ -71,7 +75,7 @@ export default function FormInput() {
 						onInput={(e) => setBadgeId(e.currentTarget.value)}
 						className="form-input lg:w-[48%]"
 						required={true}
-						placeholder="Pastikan kembali nomor badge yang anda masukkan. Kesalahan input bukan tanggung jawab Panitia, contoh: 03191"
+						placeholder="Badge Id, example: 03191"
 						onClick={() => setBadgeId("")}
 					/>
 				</div>
